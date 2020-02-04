@@ -1,0 +1,42 @@
+[
+    {
+        "name": "usa",
+        "type": "wms",
+        "sourceProps": {
+            "url": "https://ahocevar.com/geoserver/wms",
+            "cross-origin": "anonymous",
+            "server-type": "geoserver",
+            "transition": 0,
+            "layers": "topp:states",
+            "tiled": true
+        },
+        "layerProps": {
+            "extent": [-13884991, 2870341, -7455066, 6338219],
+            "opacity": 1
+        }
+    },
+    {
+        "name": "Iowa",
+        "type": "wms",
+        "sourceProps": {
+            "url": "https://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r-t.cgi",
+            "cross-origin": "anonymous",
+            "attributions": ["Iowa State University"],
+            "layers": "nexrad-n0r-wmst"
+        },
+        "layerProps": {
+            "extent": [-13884991, 2870341, -7455066, 6338219],
+            "opacity": 1
+        }
+    },
+    {
+        "name": "countries",
+        "type": "wfs",
+        "sourceProps": {
+            "url": "https://openlayers.org/en/latest/examples/data/geojson/countries.geojson"
+        },
+        "layerProps": {
+            "opacity": 1
+        }
+    }
+]
